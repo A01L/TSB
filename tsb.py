@@ -11,7 +11,7 @@ from flask import Flask, request, jsonify
 from pyngrok import ngrok, conf, installer
 import logging
 
-# Ебанные логи выключены
+# Логи выключены
 log = logging.getLogger('werkzeug')
 log.disabled = True
 logging.getLogger('flask').disabled = True
@@ -60,7 +60,7 @@ def ensure_ngrok_token():
 
     try:
         ngrok.set_auth_token(token)
-        test = ngrok.connect(4040)  # Если все ебанет
+        test = ngrok.connect(4040) 
         ngrok.disconnect(test.public_url)
     except Exception:
         print("- Токен недействителен. Введите его заново.")
@@ -217,7 +217,7 @@ def send_file(url, file_path):
         os.remove(file_path)
 
 
-# Инуструкция
+# Инструкция
 def print_usage():
     print("""
 TSB — Tuneling for Share Bytes | Автор: Github.com/A01L

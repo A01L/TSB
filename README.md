@@ -1,2 +1,3 @@
 # TSB
 TSB (Tuneling for Share Bytes) — это CLI-инструмент для peer-to-peer передачи файлов между удалёнными машинами без необходимости в выделенном сервере или домене.
+![Текст](https://github.com/A01L/TSB/blob/main/info.png)
